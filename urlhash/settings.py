@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'corsheaders',
+    'drf_yasg',
 
     'short.apps.ShortConfig'
 ]
@@ -89,7 +90,7 @@ DATABASES = {
         'NAME': 'urlhash2',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': 'mongodb+srv://pranjal:47007.Pk@cluster0.0axfq.mongodb.net/urlhash2?retryWrites=true&w=majority'
+            'host': os.getenv('mongo_host')
         }
     }
 }
