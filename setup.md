@@ -60,9 +60,9 @@ pip install -r requirements.txt
 Redis
 </h2>
 
-* Linus : <a src=https://redis.io/topics/quickstart>Redis</a>
+* Linus : https://redis.io/topics/quickstart
 
-* Windows : <a src=https://redis.io/download>Redis</a>
+* Windows : https://redis.io/download
 
 After installing Redis run the redis server on port 6379
 
@@ -123,3 +123,13 @@ celery -A urlhash worker -B
 ```
 
 ** Note : Make sure redis server is running on prot 6379 before staarting celery
+
+<h2>
+Swagger
+</h2>
+
+After running the server the swagger will be present on:
+
+```
+127.0.0.1:8000
+```
