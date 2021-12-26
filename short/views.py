@@ -40,6 +40,6 @@ class CreateNewShort(View):
                 url.expires_in = expires_in
             url.save()
             endpoint = reverse('short_url', kwargs={'hash':url.hash})
-            return JsonResponse({'short': getenv('base') + endpoint}, status=200)
+            return JsonResponse({'short': getenv('base') + endpoint}, status=201)
         else:
             return JsonResponse({'detail': 'long_url not passed'}, status=400)
